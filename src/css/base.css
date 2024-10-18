@@ -2,6 +2,7 @@ body {
   font-family: "Inter Tight", serif;
   color: #fbfbfb;
   background-color: #7a3145;
+  margin: 0;
 }
 
 .visually-hidden {
