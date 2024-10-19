@@ -1,1 +1,114 @@
-your-order
+<section class="your-order">
+  <div class="container your-oder-container">
+    <h2 class="your-oder-title">
+      Fresh <span class="your-oder-special-color">Harvest</span> Box has got you
+      covered
+    </h2>
+    <p class="your-oder-text">
+      Our boxes are packed with delicious, nutritious vegetables, perfect for
+      anyone looking to eat healthier or support local farmers. Order your box
+      today and start enjoying the best that nature has to offer!
+    </p>
+    <div class="your-oder-cards">
+      <div class="your-order-form-card">
+        <p class="your-order-form-card-text">
+          Ordering <span class="form-card-text-special-color">from us</span> is
+          quick and easy! Fill out
+          <span class="form-card-text-another-color">the form</span> below and
+          we will contact you !
+        </p>
+        <form class="your-order-form-card-input">
+          <input
+            class="your-order-form-input"
+            id="full-name"
+            name="full-name"
+            type="text"
+            placeholder="Full Name"
+            pattern="([A-z0-9_.-]{1,})"
+            required
+          />
+          <input
+            class="your-order-form-input"
+            id="email"
+            name="email"
+            type="email"
+            placeholder="Email"
+            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+            required
+          />
+          <textarea
+            class="your-order-form-input textarea-input"
+            id="user-comment"
+            name="user-comment"
+            placeholder="Comment"
+            pattern="([A-z0-9_.-]{1,})"
+            required
+          ></textarea>
+          <button class="your-order-form-btn" type="submit">Send</button>
+        </form>
+      </div>
+      <div class="your-order-social-card">
+        <picture>
+          <source
+            srcset="
+              ./images/your-order/desktop-your-order.jpg    1x,
+              ./images/your-order/desktop-your-order@2x.jpg 2x
+            "
+            media="(min-width:
+                1280px)"
+          />
+          <source
+            srcset="
+              ./images/your-order/tablet-your-order.jpg    1x,
+              ./images/your-order/tablet-your-order@2x.jpg 2x
+            "
+            media="(min-width:768px)"
+          />
+          <source
+            srcset="
+              ./images/your-order/mobile-your-order.jpg    1x,
+              ./images/your-order/mobile-your-order@2x.jpg 2x
+            "
+            media="(max-width:767px)"
+          />
+          <img
+            class="your-order-social-card-img"
+            src="./images/your-order/desktop-your-order.jpg"
+            alt="your-order-img"
+            width="427"
+            height="273"
+          />
+        </picture>
+        <p class="your-order-social-card-text">
+          Follow us on our social networks:
+        </p>
+        <ul class="your-order-social-card-list">
+          <li class="your-order-social-card-item">
+            <a
+              class="your-order-social-card-link"
+              href="https://www.instagram.com/goitclub/"
+              target="_blank"
+              >instagram /
+            </a>
+          </li>
+          <li class="your-order-social-card-item">
+            <a
+              class="your-order-social-card-link"
+              href="https://www.facebook.com/goITclub/"
+              target="_blank"
+              >facebook /
+            </a>
+          </li>
+          <li class="your-order-social-card-item">
+            <a
+              class="your-order-social-card-link"
+              href="https://www.youtube.com/c/GoIT"
+              target="_blank"
+              >youtube
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
