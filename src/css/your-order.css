@@ -1,9 +1,8 @@
 /* Styles for Mobile devices */
-.your-oder-container {
-  padding: 80px 20px;
-  margin: 0;
+.your-order {
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
-
 .your-oder-title {
   font-weight: 600;
   font-size: 48px;
@@ -108,6 +107,8 @@
   padding: 16px;
   width: 295px;
   height: 50px;
+  margin-left: auto;
+  margin-right: auto;
   background: #576f35;
   font-family: 'Inter Tight', sans-serif;
   font-weight: 600;
@@ -185,7 +186,7 @@
   .your-order-form-card {
     padding: 50px 100px;
     width: 628px;
-    height: 534px;
+    height: 100%;
   }
 
   .your-order-form-card-text {
@@ -209,7 +210,7 @@
   .your-order-social-card {
     padding: 50px;
     width: 628px;
-    height: 490px;
+    height: 100%;
   }
 
   .your-order-social-card-img {
@@ -254,7 +255,7 @@
 
   .your-order-form-card {
     padding: 50px 50px;
-    width: 529px;
+    width: 100%;
   }
 
   .your-order-form-btn {
@@ -262,8 +263,7 @@
   }
 
   .your-order-social-card {
-    width: 527px;
-    height: 534px;
+    width: 100%;
   }
 
   .your-order-social-card-img {
