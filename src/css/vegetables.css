@@ -7,9 +7,9 @@ ul {
 
 }
 .vegetables-section-wrapper{
-    padding-left: 20px;
-    padding-right: 20px;
-}
+    padding-left: 21px;
+    padding-right: 21px;
+    }
 .vegetables-main-title {
     font-weight: 600;
     font-size: 48px;
@@ -47,7 +47,7 @@ ul {
     width: 334px;
     height: 379px;
     background-color: #fbfbfb;
-    margin-bottom: 20px;
+   
 }
 
 .vegetables-info-wrapper {
@@ -83,12 +83,9 @@ ul {
 
 @media screen and (min-width: 320px) {
     
-   
-
-    .vegetables-main-text {
-       
-    min-width: 280px;
+   .vegetables-main-text {
         
+        width: 100%;
     }
 
     .vegetables-list-item {
@@ -98,41 +95,35 @@ ul {
     .vegetables-list-item:last-child {
             margin-bottom: 0;
         }
-    .vegetables-img-wrapper {
-        justify-content: center;
-        align-items: center;
-    }
+   
 }
 
 
 @media screen and (min-width: 375px) {
    
-    .vegetables-main-title {
-        max-width: 335px;
-    }
 
     .vegetables-main-text {
         max-width: 335px;
     }
 
     .vegetables-list-item {
-        width: calc(100% - 20px);
+      
         margin-bottom: 20px;
     }
 
-    .vegetables-img-wrapper {
-        justify-content: center;
-        align-items: center;
-    }
+   
 }
 @media screen and (min-width: 768px) {
     .vegetables-section-wrapper {
             padding-left: 32px;
             padding-right: 32px;
+            max-width: 768px;
+            margin-right: auto;
+            margin-left: auto;
         }
     .vegetables-main-title {
         max-width: 508px;
-        word-break: break-word;
+        white-space: normal;
     }
 
     .vegetables-list {
@@ -155,21 +146,26 @@ ul {
     .vegetables-section-wrapper {
             padding-left: 100px;
             padding-right: 100px;
+            max-width: 1280px;
+            margin-right: auto;
+            margin-left: auto;
         }
     .vegetables-list {
         grid-template-columns: repeat(3, 1fr);
-
+      
         }
+     
+           
     .vegetables-list-item{
         width: calc((100% - 42px) / 3);
         width: 346px;
         
     }
-    
     .vegetables-main-title{
-        max-width: 508px;
-       
+        max-width: 335px;
+        white-space: normal;
     }
+
     .vegetables-main-text{
         font-size: 16px;
         line-height: 1.25;
