@@ -5,7 +5,7 @@ window.addEventListener('scroll', function() {
     var currentScrollY = window.scrollY;
     
     // Если прокручиваем вниз и прокрутили больше, чем на 100px — скрываем хедер
-    if (currentScrollY > lastScrollY && currentScrollY > 100) {
+    if (currentScrollY > lastScrollY && currentScrollY > 50) {
         header.classList.add('hidden');
     } 
     // Если прокручиваем вверх — показываем хедер
@@ -14,7 +14,7 @@ window.addEventListener('scroll', function() {
     }
 
     // Если прокрутка выше 100px, делаем хедер непрозрачным
-    if (currentScrollY = 100) {
+    if (currentScrollY = 50) {
         header.classList.remove('transparent');
         header.classList.add('solid');
     } else {
