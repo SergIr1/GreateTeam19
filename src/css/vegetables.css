@@ -1,0 +1,179 @@
+ul {
+    list-style: none;
+}
+
+.vegetables-section {
+    background-color: #7a3145; 
+
+}
+.vegetables-section-wrapper{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.vegetables-main-title {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 1.04;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #fbfbfb;
+    margin-bottom: 20px;
+    max-width: 335px;
+    white-space: normal;
+}
+
+.vegetables-main-part-title {
+    color: rgba(251, 251, 251, 0.3);
+}
+
+.vegetables-main-text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.28;
+    color: #fbfbfb;
+    max-width: 335px;
+    margin-bottom: 40px;
+}
+
+.vegetables-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.vegetables-list-item {
+    
+    border-radius: 40px;
+    width: 334px;
+    height: 379px;
+    background-color: #fbfbfb;
+    margin-bottom: 20px;
+}
+
+.vegetables-info-wrapper {
+    padding-top: 32px;
+    padding-left: 26px;
+}
+
+.vegetables-food-titles {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1;
+    letter-spacing: -0.01em;
+    color: #7a3145;
+    margin-bottom: 12px;
+}
+
+.vegetables-food-p {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #141414;
+}
+.vegetables-img-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+
+
+
+@media screen and (min-width: 320px) {
+    
+   
+
+    .vegetables-main-text {
+       
+    min-width: 280px;
+        
+    }
+
+    .vegetables-list-item {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+    .vegetables-list-item:last-child {
+            margin-bottom: 0;
+        }
+    .vegetables-img-wrapper {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+@media screen and (min-width: 375px) {
+   
+    .vegetables-main-title {
+        max-width: 335px;
+    }
+
+    .vegetables-main-text {
+        max-width: 335px;
+    }
+
+    .vegetables-list-item {
+        width: calc(100% - 20px);
+        margin-bottom: 20px;
+    }
+
+    .vegetables-img-wrapper {
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (min-width: 768px) {
+    .vegetables-section-wrapper {
+            padding-left: 32px;
+            padding-right: 32px;
+        }
+    .vegetables-main-title {
+        max-width: 508px;
+        word-break: break-word;
+    }
+
+    .vegetables-list {
+        gap: 28px 20px;
+
+    }
+
+    .vegetables-list-item {
+        width: 342px;
+        height: 379px;
+        margin-bottom: 0;
+    }
+
+    .vegetables-main-text {
+        max-width: 626px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .vegetables-section-wrapper {
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+    .vegetables-list {
+        grid-template-columns: repeat(3, 1fr);
+
+        }
+    .vegetables-list-item{
+        width: calc((100% - 42px) / 3);
+        width: 346px;
+        
+    }
+    
+    .vegetables-main-title{
+        max-width: 508px;
+       
+    }
+    .vegetables-main-text{
+        font-size: 16px;
+        line-height: 1.25;
+        max-width: 626px;
+
+    }
+}
