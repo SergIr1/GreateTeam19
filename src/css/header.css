@@ -1,0 +1,298 @@
+.header {
+    background-color: #576F35;
+}
+
+.header .container {
+    flex-direction: row;
+    padding: 28px 20px;
+}
+
+.header-logo-svg {
+    width: 168px;
+    height: 16px;
+    opacity: 0px;
+    fill: #FBFBFB;
+}
+
+.header-navigation {
+    display: flex;
+    flex-direction: row;
+}
+
+.header-close-button {
+    display: flex;
+    margin-left: auto;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    float: right;
+}
+
+.header-close-button-svg {
+    fill: #FBFBFB;
+    width: 21.33px;
+    height: 16px;
+}
+
+.header-navigation-ul {
+    display: none;
+}
+
+.header-shop-button {
+    display: none;
+}
+
+/* Styles for Tablet devices */
+@media only screen and (min-width: 768px) {
+    .header-logo-svg {
+        width: 194px;
+        height: 18px;
+    }
+
+    .header-close-button-svg {
+        width: 26.67px;
+        height: 20px;
+    }
+}
+
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1280px) {
+    .header-navigation {
+        align-items: center;
+    }
+
+    .header-navigation-ul {
+        display: flex;
+        padding: 0;
+        list-style-type: none;
+        flex-direction: row;
+        margin-left: auto;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 8px;
+    }
+
+    .header-navigation-a {
+        display: flex;
+        font-size: 16px;
+        line-height: 1.25;
+        font-weight: 500;
+        letter-spacing: -0.02em;
+        text-align: center;
+        color: #FBFBFB;
+        text-decoration: none;
+        align-items: center;
+        justify-content: center;
+
+        border: 1px solid #FBFBFB66;
+        border-radius: 12px;
+        min-width: 115px;
+        max-height: 42px;
+        padding: 12px 24px;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    }
+
+    .header-navigation-a:hover {
+        color: #7A3145;
+        background-color: #FBFBFB;
+    }
+
+    .header-navigation-a:focus {
+        color: #7A3145;
+        background-color: #FBFBFB;
+    }
+
+    .header-close-button-svg {
+        display: none;
+    }
+
+    .header-shop-button {
+        display: flex;
+        margin-left: 20px;
+        display: flex;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1.29;
+        letter-spacing: -0.015em;
+        text-align: left;
+        color: #FBFBFB;
+        background-color: #7A3145;
+        min-width: 155px;
+        height: 50px;
+        padding: 16px 41px;
+        border-radius: 30px;
+        border: 1px solid transparent;
+        opacity: 0px;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .header-shop-button:hover {
+        background-color: #622133;
+    }
+
+    .header-shop-button:focus {
+        background-color: #622133;
+    }
+}
+
+/* MOBILE MENU */
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.mobile-menu-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+    padding: 20px 20px 40px 20px;
+    text-align: center;
+    background-color: #7A3145;
+}
+
+.mobile-menu-button {
+    border: 3px solid transparent;
+    background-color: transparent;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.mobile-menu-button-svg {
+    width: 16px;
+    height: 16px;
+}
+
+.mobile-menu.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.mobile-navigation-ul {
+    display: flex;
+    padding: 0;
+    list-style-type: none;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.mobile-navigation-a {
+    display: flex;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #FBFBFB;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #FBFBFB66;
+    border-radius: 12px;
+    min-width: 115px;
+    max-height: 42px;
+    padding: 12px 24px;
+    margin-bottom: 8px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-navigation-a:hover {
+    color: #7A3145;
+    background-color: #FBFBFB;
+}
+
+.mobile-navigation-a:focus {
+    color: #7A3145;
+    background-color: #FBFBFB;
+}
+
+.mobile-navigation-li-special {
+    margin-bottom: 0;
+}
+
+.mobile-shop-button {
+    display: flex;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.29;
+    letter-spacing: -0.015em;
+    text-align: left;
+    color: #7A3145;
+    min-width: 155px;
+    height: 50px;
+    padding: 16px 41px;
+    border-radius: 30px;
+    border: 1px solid transparent;
+    opacity: 0px;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-shop-button:focus {
+    color: #FBFBFB;
+    background-color: #7A3145;
+    border: 1px solid #FBFBFB33;
+}
+
+.mobile-shop-button:hover {
+    color: #FBFBFB;
+    background-color: #7A3145;
+    border: 1px solid #FBFBFB33;
+}
+
+/* Styles for Tablet devices */
+@media only screen and (min-width: 768px) {
+    .mobile-menu {
+        background-color: #14141466;
+    }
+
+    .mobile-menu-container {
+        width: 351px;
+        float: right;
+    }
+
+    .mobile-menu-button-svg {
+        width: 20px;
+        height: 20px;
+        opacity: 0px;
+    }
+
+    .mobile-navigation-a {
+        font-size: 16px;
+        line-height: 1.25;
+    }
+
+    .mobile-shop-button {
+        font-size: 18px;
+        line-height: 1.11;
+    }
+}
