@@ -11,7 +11,6 @@
 }
 
 .hero-title {
-  max-width: 100%;
   font-weight: 600;
   font-size: 48px;
   line-height: 1;
@@ -23,7 +22,6 @@
 }
 
 .hero-text {
-  width: 100%;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.29;
@@ -32,8 +30,10 @@
 }
 
 .hero-bg-wrapper {
-  max-width: 100%;
+  max-width: 375px;
   height: 370px;
+  margin-left: auto;
+  margin-right: auto;
   background-image: linear-gradient(
       rgba(20, 20, 20, 0.2),
       rgba(20, 20, 20, 0.2)
@@ -77,15 +77,15 @@
   }
 
   .hero-bg-wrapper {
-    max-width: 100%;
+    max-width: 768px;
     height: 539px;
+    margin-left: auto;
+    margin-right: auto;
     background-image: linear-gradient(
         rgba(20, 20, 20, 0.2),
         rgba(20, 20, 20, 0.2)
       ),
       url(/images/hero/tablet-bg.jpg);
-
-    gap: 50px;
   }
 
   @media (min-resolution: 192dpi) {
@@ -106,13 +106,14 @@
   .hero {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     height: 800px;
   }
 
   .hero .container {
     padding-right: 28px;
+    margin: 0;
   }
 
   .hero-text-wrapper {
@@ -129,7 +130,8 @@
   }
 
   .hero-bg-wrapper {
-    flex: 1;
+    flex-basis: 650px;
+    margin: 0;
     height: 100%;
     background-image: linear-gradient(
         rgba(20, 20, 20, 0.2),
