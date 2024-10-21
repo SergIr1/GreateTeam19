@@ -87,6 +87,7 @@
   width: 155px;
   height: 50px;
   padding: 0;
+  flex-shrink: 0;
   background-color: #fbfbfb;
   font-weight: 600;
   font-size: 14px;
