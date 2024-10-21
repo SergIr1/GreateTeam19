@@ -1,0 +1,121 @@
+.advertisement {
+    width: 1280px;
+    height: 440px;
+    position: relative;
+    top: 1559px;
+    padding: 100px 0 0 0;
+    display: flex;
+    gap: 10px;
+    opacity: 1;
+    background-color: #fbfbfb;
+}
+
+.container {
+    width: 1080px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.advertisement-title {
+    flex-direction: column;
+    max-width: 100%;
+    width: 1054px;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 1.05;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #141414;
+}
+
+.discount {
+    display: inline-block;
+    font-family: 'Inter Tight', sans-serif;
+    max-width: 525px;
+    height: auto;
+    background-color: #576f35;
+    border-radius: 12px;
+    color: #fbfbfb;
+    margin-right: 10px;
+
+}
+
+@media (max-width: 374px) {
+.advertisement {
+        padding-top: 80px;
+        padding-right: 10px;
+        padding-bottom: 80px;
+        padding-left: 10px;
+        gap: 10px;
+    }
+
+    .advertisement-title {
+        width: 355px;
+        height: 309px;
+        top: 3px;
+        font-size: 24px;
+        line-height: 1.2;
+    }
+
+    .discount {
+        font-size: 20px;
+        padding: 10px;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+.advertisement {
+    padding-top: 100px;
+    padding-right: 16px;
+    padding-bottom: 100px;
+    padding-left: 16px;
+    gap: 10px;
+}
+
+
+    .advertisement-title {
+       
+        font-size: 32px;
+        line-height: 1.2;
+        width: 736px;
+        height: 288px;
+    }
+
+    .discount {
+        font-size: 24px;
+        padding: 12px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+    .advertisement {
+        height: 488px;
+    }
+
+    .advertisement-title {
+        font-size: 36px;
+    }
+
+    .discount {
+        padding: 15px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .advertisement {
+        height: 440px;
+    }
+
+    .advertisement-title {
+        font-size: 48px;
+        max-width: 1080px;
+    }
+
+    .discount {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+}
