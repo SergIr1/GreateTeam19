@@ -102,13 +102,13 @@
 }
 
 .your-order-form-btn {
+  display: flex;
+  justify-content: center;
   margin-top: 5px;
   border-radius: 30px;
   padding: 16px;
-  width: 295px;
+  max-width: 295px;
   height: 50px;
-  margin-left: auto;
-  margin-right: auto;
   background: #576f35;
   font-family: 'Inter Tight', sans-serif;
   font-weight: 600;
@@ -118,6 +118,14 @@
   text-transform: uppercase;
   color: #fbfbfb;
   border: none;
+  transition: background 250ms ease, color 250ms ease, border 250ms ease;
+}
+
+.your-order-form-btn:hover,
+.your-order-form-btn:focus {
+  background: #fbfbfb;
+  color: #576f35;
+  border: solid 1px #576f35;
 }
 
 .your-order-social-card {
@@ -156,6 +164,12 @@
   font-size: 24px;
   line-height: 1.08;
   letter-spacing: -0.01em;
+  transition: color 250ms ease;
+}
+
+.your-order-social-card-link:hover,
+.your-order-social-card-link:focus {
+  color: #7a3145;
 }
 
 /* Styles for Tablet devices */
@@ -203,6 +217,8 @@
 
   .your-order-form-btn {
     margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
     width: 428px;
     height: 52px;
   }
