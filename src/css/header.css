@@ -173,7 +173,7 @@
 
 /* MOBILE MENU */
 
-.mobile-menu {
+/* .mobile-menu {
     position: fixed;
     top: 0;
     left: 0;
@@ -298,7 +298,7 @@
     border: 1px solid #FBFBFB33;
 }
 
-/* Styles for Tablet devices */
+Styles for Tablet devices
 @media only screen and (min-width: 768px) {
     .mobile-menu {
         background-color: #14141466;
@@ -324,4 +324,4 @@
         font-size: 18px;
         line-height: 1.11;
     }
-}
+} */
