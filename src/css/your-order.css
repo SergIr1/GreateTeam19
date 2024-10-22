@@ -199,13 +199,9 @@
     align-items: center;
   }
 
-  .your-oder-cards-common-item {
-    width: calc((100%-24px) 2);
-  }
-
   .your-order-form-card {
     padding: 50px 100px;
-    width: 100%;
+    width: 628px;
     height: 100%;
   }
 
@@ -231,7 +227,7 @@
 
   .your-order-social-card {
     padding: 50px;
-    width: 100%;
+    width: 628px;
     height: 100%;
   }
 
@@ -275,17 +271,16 @@
     gap: 24px;
   }
 
+  .your-oder-cards-common-item {
+    width: calc((100%-24px) / 2);
+  }
+
   .your-order-form-card {
     padding: 50px 50px;
-    width: 100%;
   }
 
   .your-order-form-btn {
     min-width: 429px;
-  }
-
-  .your-order-social-card {
-    width: 100%;
   }
 
   .your-order-social-card-img {
