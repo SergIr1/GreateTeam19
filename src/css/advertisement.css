@@ -1,121 +1,75 @@
 .advertisement {
-    width: 1280px;
-    height: 440px;
-    position: relative;
-    top: 1559px;
-    padding: 100px 0 0 0;
-    display: flex;
-    gap: 10px;
-    opacity: 1;
     background-color: #fbfbfb;
 }
 
-.container {
-    width: 1080px;
-    height: auto;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-}
-
 .advertisement-title {
-    flex-direction: column;
-    max-width: 100%;
-    width: 1054px;
+    display: block;
+    max-width: 335px;
     font-weight: 600;
     font-size: 48px;
     line-height: 1.05;
     letter-spacing: -0.01em;
     text-transform: uppercase;
+    padding-top: 80px;
+    padding-bottom: 80px;
     color: #141414;
 }
 
 .discount {
-    display: inline-block;
-    font-family: 'Inter Tight', sans-serif;
-    max-width: 525px;
-    height: auto;
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
     background-color: #576f35;
     border-radius: 12px;
     color: #fbfbfb;
-    margin-right: 10px;
 
 }
 
-@media (max-width: 374px) {
-.advertisement {
-        padding-top: 80px;
-        padding-right: 10px;
-        padding-bottom: 80px;
-        padding-left: 10px;
-        gap: 10px;
-    }
+.discount-part-title {
+    display: block;
+    padding-left: 10px;
+}
 
+@media screen and (min-width: 768px) {
     .advertisement-title {
-        width: 355px;
-        height: 309px;
-        top: 3px;
-        font-size: 24px;
-        line-height: 1.2;
+        max-width: 100%;
+        font-size: 64px;
+        line-height: 1.09;
     }
 
     .discount {
-        font-size: 20px;
-        padding: 10px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .discount-part-title {
+        padding-left: 16px;
+        padding-right: 16px;
     }
 }
 
-@media (min-width: 375px) and (max-width: 767px) {
-.advertisement {
-    padding-top: 100px;
-    padding-right: 16px;
-    padding-bottom: 100px;
-    padding-left: 16px;
-    gap: 10px;
-}
-
-
+@media screen and (min-width: 1280px) {
     .advertisement-title {
-       
-        font-size: 32px;
-        line-height: 1.2;
-        width: 736px;
-        height: 288px;
-    }
-
-    .discount {
-        font-size: 24px;
-        padding: 12px;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 1279px) {
-    .advertisement {
-        height: 488px;
-    }
-
-    .advertisement-title {
-        font-size: 36px;
-    }
-
-    .discount {
-        padding: 15px;
-    }
-}
-
-@media (min-width: 1280px) {
-    .advertisement {
-        height: 440px;
-    }
-
-    .advertisement-title {
-        font-size: 48px;
         max-width: 1080px;
+        font-size: 76px;
+        line-height: 1.05;
     }
 
     .discount {
-        padding-left: 8px;
-        padding-right: 8px;
+        display: inline-block;
+        padding-left: 13px;
+        padding-right: 13px;
+    }
+
+    .discount-part-title {
+        display: inline;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .discount-part-title-paddings {
+        display: block;
+        padding-left: 13px;
+        padding-right: 13px;
     }
 }
