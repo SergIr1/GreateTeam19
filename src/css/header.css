@@ -1,5 +1,27 @@
 .header {
-    background-color: #576F35;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    padding-top: 18px;
+
+    /* transition: transform 400ms ease, opacity 400ms ease, background-color 400ms ease; */
+
+    background-color: transparent;
+
+    opacity: 1;
+    transform: translateY(0);
+
+    transition: transform 400ms ease, opacity 400ms ease;
+
+    z-index: 1000;
+    /* Начальная позиция */
+}
+
+.header.hidden {
+    opacity: 0;
+    transform: translateY(-100%);
 }
 
 .header .container {
@@ -11,7 +33,7 @@
     width: 168px;
     height: 16px;
     opacity: 0px;
-    fill: #FBFBFB;
+    stroke: #FBFBFB;
 }
 
 .header-navigation {
@@ -26,10 +48,12 @@
     background-color: transparent;
     cursor: pointer;
     float: right;
+    padding: 0;
+    line-height: 0;
 }
 
 .header-close-button-svg {
-    fill: #FBFBFB;
+    stroke: #FBFBFB;
     width: 21.33px;
     height: 16px;
 }
@@ -57,6 +81,11 @@
 
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1280px) {
+    .container.header-container {
+        padding-top: 32px;
+        padding-left: 100px;
+    }
+
     .header-navigation {
         align-items: center;
     }
@@ -66,9 +95,9 @@
         padding: 0;
         list-style-type: none;
         flex-direction: row;
-        margin-left: auto;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-end;
+        flex-grow: 1;
         text-align: center;
         gap: 8px;
     }
