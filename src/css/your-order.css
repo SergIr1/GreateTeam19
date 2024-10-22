@@ -91,6 +91,7 @@
   padding-bottom: 14px;
   padding-left: 16px;
   height: 91px;
+  resize: none;
 }
 
 .your-order-form-input::placeholder {
