@@ -32,7 +32,7 @@
 .header-logo-svg {
     width: 168px;
     height: 16px;
-    opacity: 0px;
+    opacity: 0;
     fill: #FBFBFB;
 }
 
@@ -161,7 +161,7 @@
         padding: 16px 41px;
         border-radius: 30px;
         border: 1px solid transparent;
-        opacity: 0px;
+        opacity: 0;
         align-items: center;
         justify-content: center;
         cursor: pointer;
