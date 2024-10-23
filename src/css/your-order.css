@@ -271,9 +271,9 @@
     gap: 24px;
   }
 
-  .your-oder-cards-common-item {
+  /* .your-oder-cards-common-item {
     width: calc((100%-24px) / 2);
-  }
+  } */
 
   .your-order-form-card {
     padding: 50px 50px;
