@@ -50,6 +50,8 @@
     float: right;
     padding: 0;
     line-height: 0;
+    width: 40px;
+    height: 40px;
 }
 
 .header-close-button-svg {
@@ -71,6 +73,11 @@
     .header-logo-svg {
         width: 194px;
         height: 18px;
+    }
+
+    .header-close-button {
+        width: 32px;
+        height: 32px;
     }
 
     .header-close-button-svg {

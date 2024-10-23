@@ -16,9 +16,7 @@ window.addEventListener('scroll', function() {
     // Если прокрутка выше 100px, делаем хедер непрозрачным
     if (currentScrollY = 50) {
         header.classList.remove('transparent');
-        header.classList.add('solid');
     } else {
-        header.classList.remove('solid');
         header.classList.add('transparent');
     }
 
